@@ -6,423 +6,441 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Team Daily</title>
     <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <script src="js/scripts.js"></script>
 </head>
 
 <body id="page-top">
+    <script>
+        inputPW();
+    </script>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars ms-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#about">Team.Daily</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                </ul>
+    <div class='hid'>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink" id="mainNav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">Team.Daily</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- About-->
-    <section class="page-section" id="about">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Team.Daily</h2>
-                <h3 class="section-subheading text-muted">Since 2020.03</h3>
-            </div>
-            <ul class="timeline">
-                <li>
-                    <div class="timeline-image">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                            <img class="rounded-circle img-fluid" src="assets/img/about/S_SpringPicnic.jpeg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2020.02.28</h4>
-                            <h4 class="subheading">봄소풍 - 첫 자체 방탈</h4>
+        </nav>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Team.Daily</h2>
+                    <h3 class="section-subheading text-muted">Since 2020.03</h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/S_SpringPicnic.jpeg"
+                                    alt="..." />
+                            </a>
                         </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">2월 28일, 1박 2일 정모가 열리는 날!</br>
-                                이번 봄소풍은 양평에 있는 별장에서 진행된다고 한다.</br>
-                                몇 명은 먼저 가서 셋팅 해둔다고 했고.. 주소도 받았으니까....!</br>
-                                늦지만 않으면 되겠다. 설레는 마음으로 출발해볼까?</p>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2020.02.28</h4>
+                                <h4 class="subheading">봄소풍 - 첫 자체 방탈</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">2월 28일, 1박 2일 정모가 열리는 날!</br>
+                                    이번 봄소풍은 양평에 있는 별장에서 진행된다고 한다.</br>
+                                    몇 명은 먼저 가서 셋팅 해둔다고 했고.. 주소도 받았으니까....!</br>
+                                    늦지만 않으면 되겠다. 설레는 마음으로 출발해볼까?</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                            <img class="rounded-circle img-fluid" src="assets/img/about/S_HeartSignal.jpeg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2020.04.09</h4>
-                            <h4 class="subheading">하트시그 널 좋아해! part.1</h4>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/S_HeartSignal.jpeg"
+                                    alt="..." />
+                            </a>
                         </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">방친방팟방 X Team.Daily</p>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2020.04.09</h4>
+                                <h4 class="subheading">하트시그 널 좋아해! part.1</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">방친방팟방 X Team.Daily</p>
+                            </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <div class="timeline-image">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                            <img class="rounded-circle img-fluid" src="assets/img/about/S_VoteStreamer.jpeg"
-                                alt="..." />
-                        </a>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2020.07.04</h4>
-                            <h4 class="subheading">
-                                당신의 스트리머에게 투표하세요</br>
-                                - 첫 자체 크라임씬
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/S_VoteStreamer.jpeg"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2020.07.04</h4>
+                                <h4 class="subheading">
+                                    당신의 스트리머에게 투표하세요</br>
+                                    - 첫 자체 크라임씬
+                                </h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    모두가 어떠한 사건에 휘말리게 되었다!!</br>
+                                    현장을 수색하여 나의 무죄를 입증하고 범인을 찾아라!!</br>
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/S_GeniusPresident.jpeg"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2020.11.01 ~ 2020.11.02</h4>
+                                <h4 class="subheading">대선 - The Genius Game</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    지니어스 국민이라면 누구나 참여할 수 있는</br>
+                                    지니어스국 제 1회 대통령 선거!!</br>
+                                    나의 능력을 증명하고 대통령이 되어라
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/S_TheGameOfHwangzwa.jpeg"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2021.03.01</h4>
+                                <h4 class="subheading">황자의 게임</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    함부즈 제국의 송년 연회에 초대되어 한껏 치장하고 참여하였다.</br>
+                                    연회가 한창 무르익던 그 때에!</br>
+                                    황제가 쓰러졌다
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <img class="rounded-circle img-fluid" src="assets/img/about/S_WarWtihCrimeScene.jpeg"
+                                    alt="..." />
+                            </a>
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2021.07.03 ~ 2021.07.04</h4>
+                                <h4 class="subheading">크씬과의 전쟁</h4>
+                                <h6 class="subheading">방탈러들 전성시대</h6>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">
+                                    모습을 알지 못하는 보스 아래에서</br>
+                                    함께해온 코리안 마피아, 안주파의 조직원들</br>
+                                    어느 날, 보스의 지령과 함께 다같이 한 장소에 모이게 되는데
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Coming
+                                </br>
+                                Soon!
                             </h4>
                         </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                모두가 어떠한 사건에 휘말리게 되었다!!</br>
-                                현장을 수색하여 나의 무죄를 입증하고 범인을 찾아라!!</br>
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                            <img class="rounded-circle img-fluid" src="assets/img/about/S_GeniusPresident.jpeg"
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Team.Daily</h2>
+                    <h3 class="section-subheading text-muted">자체 콘텐츠 제작자</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle"
+                                src="https://cdn.class101.net/images/168b9029-9986-4c18-af62-1f38a77991e5/original"
                                 alt="..." />
-                        </a>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2020.11.01 ~ 2020.11.02</h4>
-                            <h4 class="subheading">대선 - The Genius Game</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                지니어스 국민이라면 누구나 참여할 수 있는</br>
-                                지니어스국 제 1회 대통령 선거!!</br>
-                                나의 능력을 증명하고 대통령이 되어라
-                            </p>
+                            <h4>아똥</h4>
+                            <p class="text-muted">Team Leader</p>
                         </div>
                     </div>
-                </li>
-                <li>
-                    <div class="timeline-image">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                            <img class="rounded-circle img-fluid" src="assets/img/about/S_TheGameOfHwangzwa.jpeg" alt="..." />
-                        </a>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2021.03.01</h4>
-                            <h4 class="subheading">황자의 게임</h4>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                함부즈 제국의 송년 연회에 초대되어 한껏 치장하고 참여하였다.</br>
-                                연회가 한창 무르익던 그 때에!</br>
-                                황제가 쓰러졌다
-                            </p>
-                        </div>
-                    </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                            <img class="rounded-circle img-fluid" src="assets/img/about/S_WarWtihCrimeScene.jpeg"
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle"
+                                src="https://post-phinf.pstatic.net/MjAxNzA4MDVfMTQz/MDAxNTAxOTE2MzMzOTI0.X0P-issPTorlZUgj6b7R6hV00t-x2eyiHWJSeCd3ABgg.Od4aW4_e5facHW4WjXaMCeOaYBE6FEdC76UQotMwwPYg.JPEG/mug_obj_201708051558543048.jpg?type=w1080"
                                 alt="..." />
-                        </a>
-                    </div>
-                    <div class="timeline-panel">
-                        <div class="timeline-heading">
-                            <h4>2021.07.03 ~ 2021.07.04</h4>
-                            <h4 class="subheading">크씬과의 전쟁</h4>
-                            <h6 class="subheading">방탈러들 전성시대</h6>
-                        </div>
-                        <div class="timeline-body">
-                            <p class="text-muted">
-                                모습을 알지 못하는 보스 아래에서</br>
-                                함께해온 코리안 마피아, 안주파의 조직원들</br>
-                                어느 날, 보스의 지령과 함께 다같이 한 장소에 모이게 되는데
-                            </p>
+                            <h4>JOE</h4>
+                            <p class="text-muted">Contents Creator</p>
                         </div>
                     </div>
-                </li>
-                <li class="timeline-inverted">
-                    <div class="timeline-image">
-                        <h4>
-                            Coming
-                            </br>
-                            Soon!
-                        </h4>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Team-->
-    <section class="page-section bg-light" id="team">
-        <div class="container">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase">Team.Daily</h2>
-                <h3 class="section-subheading text-muted">자체 콘텐츠 제작자</h3>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="https://cdn.class101.net/images/168b9029-9986-4c18-af62-1f38a77991e5/original" alt="..." />
-                        <h4>아똥</h4>
-                        <p class="text-muted">Team Leader</p>
+                    <div class="col-lg-4">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle"
+                                src="https://i.pinimg.com/originals/67/c4/28/67c428560442f7aa423d7fdfc1ff88ea.gif"
+                                alt="..." />
+                            <h4>담</h4>
+                            <p class="text-muted">Screen Writer</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="https://post-phinf.pstatic.net/MjAxNzA4MDVfMTQz/MDAxNTAxOTE2MzMzOTI0.X0P-issPTorlZUgj6b7R6hV00t-x2eyiHWJSeCd3ABgg.Od4aW4_e5facHW4WjXaMCeOaYBE6FEdC76UQotMwwPYg.JPEG/mug_obj_201708051558543048.jpg?type=w1080" alt="..." />
-                        <h4>JOE</h4>
-                        <p class="text-muted">Contents Creator</p>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="team-member">
-                        <img class="mx-auto rounded-circle" src="https://i.pinimg.com/originals/67/c4/28/67c428560442f7aa423d7fdfc1ff88ea.gif" alt="..." />
-                        <h4>담</h4>
-                        <p class="text-muted">Screen Writer</p>
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <p class="large text-muted">
+                            안녕하세요.</br>
+                            Daily Ent.입니다.</br>
+                            저희는 '평소방'이라는 방탈출 팀에서 활동하고 있는 인원들로 구성되어있으며</br>
+                            2020년 3월부터 지금까지 수제 방탈출, 크라임씬, 지니어스게임 등의 행사를 주관하고 개최해왔습니다.</br>
+                            처음에는 많은 점이 부족했고, 지금도 그렇지만 점점 개선해오면서 오시는 분들이 재미있게 즐기고 가실 수 있도록 최선을 다하고 있습니다.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <p class="large text-muted">
-                        안녕하세요.</br>
-                        Daily Ent.입니다.</br>
-                        저희는 '평소방'이라는 방탈출 팀에서 활동하고 있는 인원들로 구성되어있으며</br>
-                        2020년 3월부터 지금까지 수제 방탈출, 크라임씬, 지니어스게임 등의 행사를 주관하고 개최해왔습니다.</br>
-                        처음에는 많은 점이 부족했고, 지금도 그렇지만 점점 개선해오면서 오시는 분들이 재미있게 즐기고 가실 수 있도록 최선을 다하고 있습니다.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Portfolio item 1 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <img class="img-fluid d-block mx-auto" src="assets/img/about/SpringPicnic.jpeg" alt="..." />
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    닫기
-                                </button>
+        </section>
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                            alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/about/SpringPicnic.jpeg"
+                                        alt="..." />
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                        type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        닫기
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Portfolio item 2 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">하트시그 널 좋아해!</h2>
-                                <h4 class="text-uppercase">part.1</h4>
-                                <p class="item-intro text-muted">방친방팟방 X Team.Daily</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/about/HeartSignal.jpeg" alt="..." />
-                                <p>Team.Daily와 방친방팟방이 함께 제작한 카톡 오픈채팅 방탈출</p>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    닫기
-                                </button>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                            alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">하트시그 널 좋아해!</h2>
+                                    <h4 class="text-uppercase">part.1</h4>
+                                    <p class="item-intro text-muted">방친방팟방 X Team.Daily</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/about/HeartSignal.jpeg"
+                                        alt="..." />
+                                    <p>Team.Daily와 방친방팟방이 함께 제작한 카톡 오픈채팅 방탈출</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                        type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        닫기
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Portfolio item 3 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <img class="img-fluid d-block mx-auto" src="https://static.wixstatic.com/media/8a202b_70dc5865cc6c487683567aa22f02b80e~mv2.png/v1/fill/w_1200,h_15408,al_c,q_95,usm_0.66_1.00_0.01/0630_%E1%84%8F%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%8A%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A1%E1%86%BC%E1%84%89%E1%85%A6%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.webp" alt="..." />
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    닫기
-                                </button>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                            alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <img class="img-fluid d-block mx-auto"
+                                        src="https://static.wixstatic.com/media/8a202b_70dc5865cc6c487683567aa22f02b80e~mv2.png/v1/fill/w_1200,h_15408,al_c,q_95,usm_0.66_1.00_0.01/0630_%E1%84%8F%E1%85%B3%E1%84%85%E1%85%A1%E1%84%8B%E1%85%B5%E1%86%B7%E1%84%8A%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A1%E1%86%BC%E1%84%89%E1%85%A6%E1%84%91%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%8C%E1%85%B5.webp"
+                                        alt="..." />
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                        type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        닫기
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Portfolio item 4 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">대선 - The Genius Game</h2>
-                                <p class="item-intro text-muted">by Team.Daily</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/about/GeniusPresident.jpeg" alt="..." />
-                                <p>
-                                    '대선'이라는 큰 게임 내에</br>
-                                    두 가지 게임이 더 진행되어 우승자가 결정된다!
-                                </p>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    닫기
-                                </button>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                            alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">대선 - The Genius Game</h2>
+                                    <p class="item-intro text-muted">by Team.Daily</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/about/GeniusPresident.jpeg"
+                                        alt="..." />
+                                    <p>
+                                        '대선'이라는 큰 게임 내에</br>
+                                        두 가지 게임이 더 진행되어 우승자가 결정된다!
+                                    </p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                        type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        닫기
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Portfolio item 5 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">황자의 게임</h2>
-                                <p class="item-intro text-muted">방탈출 X 크라임씬</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/about/TheGameOfHwangzwa.jpeg" alt="..." />
-                                <p>
-                                    1년 중 가장 성대하다는 함부즈 제국의 송년 연회</br>
-                                    모든 왕족과 각 영지의 귀족들은</br>
-                                    한껏 치장을 하고 멀리 수도에 있는 황궁으로 모였다</br>
-                                    흥겨운 연회가 이어지던 도중</br>
-                                    슈비르 황제가 쓰러졌다</br>
-                                    </br>
-                                    황좌를 차지할 자는 누구인가</br>
-                                </p>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    닫기
-                                </button>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                            alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">황자의 게임</h2>
+                                    <p class="item-intro text-muted">방탈출 X 크라임씬</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/about/TheGameOfHwangzwa.jpeg"
+                                        alt="..." />
+                                    <p>
+                                        1년 중 가장 성대하다는 함부즈 제국의 송년 연회</br>
+                                        모든 왕족과 각 영지의 귀족들은</br>
+                                        한껏 치장을 하고 멀리 수도에 있는 황궁으로 모였다</br>
+                                        흥겨운 연회가 이어지던 도중</br>
+                                        슈비르 황제가 쓰러졌다</br>
+                                        </br>
+                                        황좌를 차지할 자는 누구인가</br>
+                                    </p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                        type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        닫기
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Portfolio item 6 modal popup-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
-                        alt="Close modal" /></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="modal-body">
-                                <!-- Project details-->
-                                <h2 class="text-uppercase">크씬과의 전쟁</h2>
-                                <p class="item-intro text-muted">방탈러들 전성시대</p>
-                                <img class="img-fluid d-block mx-auto" src="assets/img/about/WarWithCrimeSecene.jpeg" alt="..." />
-                                <p>
-                                    서울을 주름 잡고 있는 코리안 마피아, 안주파
-                                    그 모습을 드러내지 않는 보스 아래에서
-                                    오랜 시간 함께해 온 조직원들
-                                    어느 날 지령이 하나 떨어진다
-
-                                    '안주파를 재편한다'
-                                    '각 지부장들은 지부원들과 함께[ 사무실로 모여라.'
-
-                                    그 말에 따라 안주파 산하 지부의 모든 조직원들이
-                                    서울의 중심인 명동에 위치한 사무실로 모이게 되는데..
-                                    그들은 생각치도 못한 상황과 마주친다
-                                    법도 로망도 없이 속고 속이는 건달의 세계
-
-                                    당신은 진실을 밝혖낼 수 있겠습니까?
-                                </p>
-                                <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
-                                    type="button">
-                                    <i class="fas fa-times me-1"></i>
-                                    닫기
-                                </button>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg"
+                            alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">크씬과의 전쟁</h2>
+                                    <p class="item-intro text-muted">방탈러들 전성시대</p>
+                                    <img class="img-fluid d-block mx-auto"
+                                        src="assets/img/about/WarWithCrimeSecene.jpeg" alt="..." />
+                                    <p>
+                                        서울을 주름 잡고 있는 코리안 마피아, 안주파</br>
+                                        그 모습을 드러내지 않는 보스 아래에서</br>
+                                        오랜 시간 함께해 온 조직원들</br>
+                                        어느 날 지령이 하나 떨어진다</br>
+                                        </br>
+                                        '안주파를 재편한다'</br>
+                                        '각 지부장들은 지부원들과 함께 사무실로 모여라.'</br>
+                                        </br>
+                                        그 말에 따라 안주파 산하 지부의 모든 조직원들이</br>
+                                        서울의 중심인 명동에 위치한 사무실로 모이게 되는데..</br>
+                                        그들은 생각치도 못한 상황과 마주친다</br>
+                                        법도 로망도 없이 속고 속이는 건달의 세계</br>
+                                        </br>
+                                        당신은 진실을 밝혀낼 수 있겠습니까?</br>
+                                    </p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal"
+                                        type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        닫기
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="footer py-4">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 text-lg-start">Copyright &copy; Team.Daily 2020</div>
-                <div class="col-lg-4 my-3 my-lg-0">
-                </div>
-                <div class="col-lg-4 text-lg-end">
-                    <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                    <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Team.Daily 2020</div>
+                    <div class="col-lg-4 my-3 my-lg-0">
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <!-- * *                               SB Forms JS                               * *-->
-    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 </body>
 
 </html>
